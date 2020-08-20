@@ -36,17 +36,22 @@
         <div class="content-container">
             <!-- Actual input for distance.-->
             <h1>Run Tracker</h1>
-            <form method="post" id='run-form'> <!--action="./phpScripts/addToDb.php" INSERT THIS INTO FORM WHEN COMPLETED JAVASCRIPT TESTING--> 
+            <form method="post" action="./phpScripts/addToDb.php" id='run-form'> 
                 <p><label for="run-count">Distance Ran:</label>
                 <input type='text' name="run-count" id="run-count" class='form-input'/></p>
                 <div class="form-break"></div> <!-- Find a better way to do this! -->
-                <p><label for='day'>Day (MM/DD/YYYY):</label>
+                <p><label for='day'>Day (YYYY-MM-DD):</label>
                 <input type='text' name='day' id='day' class='form-input'/></p>
                 <div class="form-break"></div>
                 <p><label for='location'>Location of Run:</label>
                 <input type='text' name='location' id='location' class='form-input'/></p>
                 <input class='submit-btn' type="submit" name="submit" onclick="checkFormInputs()"/>
             </form>
+
+            <!-- Database queried information -->
+            <?php
+                loadDB($conn);
+            ?>
         </div>
     </div>
 </body>
