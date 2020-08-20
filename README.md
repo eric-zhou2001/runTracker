@@ -16,3 +16,8 @@ Developing an application that provides new/interesting insight into your daily 
  - I wanted to learn more back-end technologies that were different than just Python/Node.js.
  - Value in learning "older" (PHP) coding methods, learn more about how browsers/pages work
  - Begin to develop an understanding of how databases work (in terms of tables rather than JSON files)
+
+ # TODO
+ - Add open source data visualization. Bar graphs maybe? Do some research on this
+ - Solve known issues in issues tab
+ - Develop Login page/database.
