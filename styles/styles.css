@@ -1,0 +1,51 @@
+
+/* Applying Baloo Tamma 2 font to everything */
+* {
+    font-family: "Baloo Tamma 2", sans-serif;
+    margin:0;
+}
+
+/* Navbar... */
+.navbar {
+    overflow:auto;
+    height: 30px;
+    background-color: orange;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.login {
+    margin-top:2px;
+    color: blue;
+}
+
+.login:hover,
+.submit-btn:hover {
+    cursor:pointer;
+}
+
+/* Centering all elements into the middle. */
+.flex-container {
+    display:flex;
+    justify-content: center;
+}
+
+.content-container {
+    margin: 40px 10px 10px 10px;
+    position:fixed;
+    top: 0;
+}
+
+/* Form styling */
+.form-break {
+    padding-top: 10px;
+}
+
+.form-input {
+    float:right;
+}
+
+form {
+    width: 300px;
+}
