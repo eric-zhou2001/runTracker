@@ -54,7 +54,10 @@
                     loadDB($conn);
                 ?>
             </div>
-            <button id='load-btn' onclick='loadMoreRuns()'>Display more runs</button>
+            <div class="btn-container">
+                <button class='load-btn' onclick='loadMoreRuns()'>Display more runs</button>
+                <button class='load-btn' onclick='loadLessRuns()'>Display less runs</button>
+            </div>
         </div>
     </div>
 </body>
