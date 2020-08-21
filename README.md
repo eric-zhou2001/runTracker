@@ -26,3 +26,4 @@ Developing an application that provides new/interesting insight into your daily 
  # Open Source Material
  - Fancy alerts, used https://github.com/t4t5/sweetalert
  - Data visualization, take a look into https://github.com/Kitware/candela/
+ - Geocoder https://github.com/wyattdanger/geocoder
