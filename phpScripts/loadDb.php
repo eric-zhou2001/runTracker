@@ -10,12 +10,30 @@
     $sql = "SELECT * FROM runs";
     $result = mysqli_query($conn, $sql);
 
+    $total_miles = 0;
     if (mysqli_num_rows($result) > 0) {
       while($row = mysqli_fetch_assoc($result)) {
-        echo "id: " . $row["user_id"]. " - miles_run: " . $row["miles_run"]. " -date: " . $row["date"] . "-location: " . $row["location"] . "<br>";
+        $miles_run = $row['miles_run'];
+        $location = $row['location'];
+        $date = $row['date'];
+        $total_miles += $miles_run;
+        echo "
+        <div class='run'>
+          <p>Distance: $miles_run miles</p>
+          <p>Location: $location</p>
+          <p>Date: $date</p>
+        </div>
+        ";
       }
     } else {
-      echo "0 results";
+      
     }
+    
+    // Load the total miles.
+    echo "
+    <div class='total-miles'>
+      <p>Total Miles: $total_miles </p>
+    </div>
+    ";
   }
 ?>
