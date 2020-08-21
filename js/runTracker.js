@@ -10,3 +10,7 @@ function checkFormInputs() {
             });
         };
 }
+
+function visualizeData() {
+    
+}
