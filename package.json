@@ -1,0 +1,22 @@
+{
+  "name": "runtracker",
+  "version": "1.0.0",
+  "description": "Developing an application that provides new/interesting insight into your daily exercise routines.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric-zhou2001/runTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eric-zhou2001/runTracker/issues"
+  },
+  "homepage": "https://github.com/eric-zhou2001/runTracker#readme",
+  "dependencies": {
+    "geocoder": "^0.2.3"
+  }
+}
