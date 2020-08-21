@@ -49,9 +49,11 @@
             </form>
 
             <!-- Database queried information -->
-            <?php
-                loadDB($conn);
-            ?>
+            <div class="run-container">
+                <?php
+                    loadDB($conn);
+                ?>
+            </div>
         </div>
     </div>
 </body>
