@@ -7,7 +7,7 @@
   $conn = mysqli_connect($host, $user, $password, $db);
 
   function loadDb($conn) {
-    $sql = "SELECT * FROM runs";
+    $sql = "SELECT * FROM runs LIMIT 3";
     $result = mysqli_query($conn, $sql);
 
     $total_miles = 0;
@@ -26,13 +26,13 @@
         ";
       }
     } else {
-      
+
     }
     
     // Load the total miles.
     echo "
     <div class='total-miles'>
-      <p>Total Miles: $total_miles </p>
+      <p>Total Miles of Runs Displayed: $total_miles </p>
     </div>
     ";
   }

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/eric-zhou2001/runTracker#readme",
   "dependencies": {
-    "geocoder": "^0.2.3"
+    "geocoder": "^0.2.3",
+    "mysql": "^2.18.1"
   }
 }

@@ -49,11 +49,12 @@
             </form>
 
             <!-- Database queried information -->
-            <div class="run-container">
+            <div id='run-container' class="run-container">
                 <?php
                     loadDB($conn);
                 ?>
             </div>
+            <button id='load-btn' onclick='loadMoreRuns()'>Display more runs</button>
         </div>
     </div>
 </body>

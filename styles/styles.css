@@ -71,7 +71,10 @@ form {
     text-align: center;
     border-style: solid;
     border-width: 1px;
-    float:right;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#load-btn {
+    margin-top: 10px;
 }
