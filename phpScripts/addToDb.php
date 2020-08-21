@@ -1,5 +1,5 @@
 <?php
-    include_once("./loadDb.php");
+    include_once("./connectToDatabase.php");
 
     $miles_run = floatval(mysqli_real_escape_string($conn, $_POST['run-count']));
     $date = date("Y-m-d", strtotime(mysqli_real_escape_string($conn, $_POST['day'])));
