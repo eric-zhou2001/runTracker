@@ -21,3 +21,4 @@ Developing an application that provides new/interesting insight into your daily 
  - Add open source data visualization. Bar graphs maybe? Do some research on this
  - Solve known issues in issues tab
  - Develop Login page/database.
+ - Possible: limit number of runs displayed, have a MySQL request if something is selected.
