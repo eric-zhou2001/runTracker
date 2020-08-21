@@ -21,7 +21,8 @@
 }
 
 .login:hover,
-.submit-btn:hover {
+.submit-btn:hover,
+.load-btn:hover {
     cursor:pointer;
 }
 
@@ -75,6 +76,11 @@ form {
     padding-right: 10px;
 }
 
-#load-btn {
+.load-btn {
     margin-top: 10px;
+}
+
+.btn-container {
+    display:flex;
+    justify-content: space-between;
 }
