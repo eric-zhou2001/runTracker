@@ -1,8 +1,13 @@
 <?php
     include("connectToDatabase.php");
     $runCount = $_POST['newRunCount'];
+    $totalRuns = mysqli_query($conn, "SELECT COUNT(*) AS `count` FROM `runs`;");
 
-    $sql = "SELECT * FROM runs LIMIT $runCount";
+    if ($runCount > $totalRuns) {
+        $sql = "SELECT * FROM runs LIMIT $totalRuns";
+    } else {
+        $sql = "SELECT * FROM runs LIMIT $runCount";
+    }
     $result = mysqli_query($conn, $sql);
 
     $total_miles = 0;

@@ -21,18 +21,17 @@ function loadMoreRuns() {
     // are calling the function from the .php file, so we must be relative to it.
     $('#run-container').load("phpScripts/loadRuns.php", {
         newRunCount: runCount
-    });
-    
-    // Sort of a hackey way to do this, since SQL won't throw an error if we try to load more than
-    // the number of existing rows.
-    var newRunCount = $("#run-container > div").length;
-    if (oldRunCount == newRunCount) {
-        event.preventDefault();
+    }, function() {
+        var newRunCount = $("#run-container > .run").length;
+        if (oldRunCount >= newRunCount) {
+            event.preventDefault();
             swal({
                 title: "No more runs to be displayed!",
                 button: "Okay"
             });
-    }
+            runCount -= 3;
+        }
+    });
 }
 
 // Same as above, but loading less runs.
