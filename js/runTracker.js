@@ -53,17 +53,3 @@ function loadLessRuns() {
     });
 }
 
-
-// This is a bit unfortunate since I'm a broke college student who can't afford to give money
-// to Google for their APIs :(
-// function visualizeData(loc) {
-//     var geoLoc;
-//     var geocoder = require('geocoder');
-//     geocoder.geocode(loc, function (err, data) {
-//         geoLoc = data;
-//         console.log(data);
-//     })
-//     console.log(geoLoc);
-// }
-
-// visualizeData("Atlanta, GA");

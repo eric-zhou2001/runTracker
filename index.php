@@ -25,13 +25,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <!-- DOM needs to be completely loaded before executing "swal" open source alerts -->
-    <script src='./js/runTracker.js'></script>
-    <div class="navbar">
-        <div class="login" onclick="login()">
-            Login
-        </div>
-    </div>
+    <?php
+        include_once("./phpScripts/header.includes.php");
+    ?>
     <div class="flex-container">
         <div class="content-container">
             <!-- Actual input for distance.-->

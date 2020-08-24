@@ -13,15 +13,15 @@
     width: 100%;
     position: fixed;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.login {
+.navbar-items {
     margin-top:2px;
     color: blue;
 }
 
-.login:hover,
+.navbar-items,
 .submit-btn:hover,
 .load-btn:hover {
     cursor:pointer;
