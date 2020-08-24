@@ -21,9 +21,8 @@ Developing an application that provides new/interesting insight into your daily 
  - Add open source data visualization. Bar graphs maybe? Do some research on this
  - Solve known issues in issues tab
  - Develop Login page/database.
- - Possible: limit number of runs displayed, have a MySQL request if something is selected.
 
  # Open Source Material
  - Fancy alerts, used https://github.com/t4t5/sweetalert
- - Data visualization, take a look into https://github.com/Kitware/candela/
+ - Data visualization, take a look into https://gionkunz.github.io/chartist-js/getting-started.html. Look into searching algorithms + what would be most efficient. I can think of brute-force methods, but consider researching into what we can use.
  - Geocoder https://github.com/wyattdanger/geocoder
